@@ -4,6 +4,7 @@ jQuery TouchHold Plugin
 jQuery TouchHold provides event bindings for 'tap-and-hold' or 'longtap' events on touch devices. 
 
 Unlike other touch libraries with support for long tap events, jQuery TouchHold allows you to bind two different event handlers: 
+
 * When the user finishes a long tap, a "touchhold.end" event is triggered
 * While the user is still touching the screen, a preliminary "touchhold.start" event is triggered signifying that enough time has elapsed for the touch to be considered a long tap, and a second when the user finishes the tap. 
 
@@ -25,7 +26,7 @@ If you want a function to be called when the current touch is long enough to be 
 
 ```js
 	var foo = function() { console.log("You completed a long tap."); }, 
-		bar = function() { console.log("You held down your finger long enough.")}
+		bar = function() { console.log("You held down your finger long enough.")};
 		
 	$("#selector").touchhold(foo, bar);
 ```
