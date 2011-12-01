@@ -1,14 +1,14 @@
-jQuery TouchHold Plugin
+jQuery Touchhold Plugin
 =======================
 
-jQuery TouchHold provides event bindings for 'tap-and-hold' or 'longtap' events on touch devices. 
+jQuery Touchhold provides event bindings for 'tap-and-hold' or 'longtap' events on touch devices. 
 
 Unlike other touch libraries with support for long tap events, jQuery TouchHold allows you to bind two different event handlers: 
 
 * When the user finishes a long tap, a "touchhold.end" event is triggered
 * While the user is still touching the screen, a preliminary "touchhold.start" event is triggered signifying that enough time has elapsed for the touch to be considered a long tap, and a second when the user finishes the tap. 
 
-This allows you to accurately imitate native iOS behavior, where a selected element is highlighted before the user takes their finger off the screen (as in native iOS text selection).
+This allows you to provide more responsive visual feedback while the user is tapping on an element, as well as more accurately imitate native iOS behavior for object selection (e.g. copy/paste).
 
 jQuery is currently a prerequisite. I haven't tested with Zepto.js, but it's possible it might work.
 
