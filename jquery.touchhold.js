@@ -8,7 +8,7 @@
 			function _touchStart(e) {
 				var that = this;
 				timeout = setTimeout(function() {
-					$(that).trigger('touchhold.start');
+					$(that).trigger('touchhold.start', [e]);
 					shouldTrigger = true;
 				}, DELAY);
 			};
